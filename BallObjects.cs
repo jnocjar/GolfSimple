@@ -14,6 +14,11 @@ public class BallObject : GolfObject
         Console.WriteLine($"Flying {ToString()}");
     }
 
+    public virtual void Roll()
+    {
+        Console.WriteLine($"Rolling {ToString()}");
+    }
+
     public string get_name() { return base._name;}
 
     // Use ToString to identify the type.

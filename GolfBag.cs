@@ -9,8 +9,8 @@ public abstract class GolfBag : GolfObject
         return $"{_golfBagName}: [Club:{_club.ToString()}], [Ball:{_ball.ToString()}], [Glove:{_glove.ToString()}]";
     }
 
-    protected ClubObject _club;
-    protected BallObject _ball;
+    protected private ClubObject _club;
+    protected private BallObject _ball;
     protected private GloveObject _glove;
 
     private string _golfBagName;

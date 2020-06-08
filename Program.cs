@@ -11,6 +11,8 @@ namespace GolfSimple
 
             Player player1 = new Player("Harvey", new GolfBagAggressive());
             Player player2 = new Player("Penick", new GolfBagAmateur());
+            Player player3 = new Player("Mickelson", new GolfBagWeekender());
+
 //            Caddy caddy = new Caddy("Bones", player1, player2);
 
             // Need to set the course in caddy - perhaps from args.
@@ -23,6 +25,7 @@ namespace GolfSimple
 
             Console.WriteLine(player1.ToString());
             Console.WriteLine(player2.ToString());
+            Console.WriteLine(player3.ToString());
 
         }
     }
