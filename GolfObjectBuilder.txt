@@ -1,0 +1,33 @@
+
+public enum ClubType { WOOD, STEEL, GRAPHITE};
+public enum BallType {TITLEIST, MAXFLI, SRIXON};
+public enum GloveType {NIKE, FOOTJOY, CALLOWAY};
+
+public class GolfObjectBuilder
+{
+    public ClubObject BuildClub(ClubType cType)
+    {
+        switch (cType)
+        {
+            case ClubType.WOOD:
+                return new ClubObjectWood();
+            case ClubType.STEEL:
+                return new ClubObjectSteel();
+            case ClubType.GRAPHITE:
+                return new ClubObjectGraphite();
+
+            default:
+                break;
+        } /* end switch */
+        // This should be in a try throw 
+        return null;
+    } /* end BuildClub */
+
+    public BallObject BuildBall(BallType bType)
+    {
+
+    }
+
+//    public BallObject ToBall(BallType bType) { return new BallObjectMaxfli();}
+//    public GloveObject ToGlove(GloveType gType) { return new GloveObjectCalloway();}
+} /* end class */
