@@ -7,6 +7,6 @@ namespace GolfObjects
 
         public GolfObject (string name) { _name = name; }
 
-       protected string _name {get;} 
+       protected string _name;  
     }
 }

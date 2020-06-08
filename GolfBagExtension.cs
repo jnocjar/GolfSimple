@@ -1,4 +1,3 @@
-using GolfObjects;
 public class GolfBagWeekender : GolfBag
 {
     public GolfBagWeekender() : base("Weekender")
