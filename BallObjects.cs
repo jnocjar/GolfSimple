@@ -25,6 +25,7 @@ public class BallObject : GolfObject
     public override string ToString()
     {   
         return $"{_ballTypeName} {get_name()}";
+    }
 
     protected string _ballTypeName;
 
